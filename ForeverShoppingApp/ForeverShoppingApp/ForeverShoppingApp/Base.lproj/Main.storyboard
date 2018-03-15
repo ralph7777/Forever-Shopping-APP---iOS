@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BZ9-N9-0bg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bodoni72-Book-SmallCaps.ttf">
+            <string>BodoniSvtyTwoSCITCTT-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="gaI-Zn-Ytn">
+            <objects>
+                <viewController id="Dnx-h2-laK" customClass="HomePgController" customModule="ForeverShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AKj-2R-O4w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xDD-DS-sor">
+                                <rect key="frame" x="0.0" y="154" width="375" height="444"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1N-Fp-tHH">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="142.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <connections>
+                                            <action selector="toCategoryPg:" destination="Dnx-h2-laK" eventType="touchUpInside" id="hHx-hK-hel"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNd-tJ-eMS">
+                                        <rect key="frame" x="0.0" y="150.5" width="30" height="143"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <connections>
+                                            <action selector="toCategoryPg:" destination="Dnx-h2-laK" eventType="touchUpInside" id="quc-p3-m2b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qu-Ee-pfH">
+                                        <rect key="frame" x="0.0" y="301.5" width="30" height="142.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <connections>
+                                            <action selector="toCategoryPg:" destination="Dnx-h2-laK" eventType="touchUpInside" id="WGe-Ia-37C"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="hRU-7s-awa">
+                                <rect key="frame" x="85.5" y="60" width="204" height="54"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3l-qM-ATS">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="54"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Girls">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="35" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                        <font key="NSOriginalFont" size="35" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="womenCategory:" destination="Dnx-h2-laK" eventType="touchUpInside" id="O4U-9X-jFv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H8w-oN-gAK">
+                                        <rect key="frame" x="135" y="0.0" width="69" height="54"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Guys">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="35" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                        <font key="NSOriginalFont" size="35" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="menCategory:" destination="Dnx-h2-laK" eventType="touchUpInside" id="hDf-6D-RLH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Hw-Ye-Uvg" firstAttribute="bottom" secondItem="xDD-DS-sor" secondAttribute="bottom" constant="20" id="A8D-7W-LJ8"/>
+                            <constraint firstItem="xDD-DS-sor" firstAttribute="top" secondItem="hRU-7s-awa" secondAttribute="bottom" constant="40" id="SqC-H9-pZm"/>
+                            <constraint firstItem="hRU-7s-awa" firstAttribute="centerX" secondItem="AKj-2R-O4w" secondAttribute="centerX" id="uaS-X0-l0n"/>
+                            <constraint firstItem="hRU-7s-awa" firstAttribute="top" secondItem="2Hw-Ye-Uvg" secondAttribute="top" constant="40" id="v41-CK-cQC"/>
+                            <constraint firstItem="xDD-DS-sor" firstAttribute="leading" secondItem="2Hw-Ye-Uvg" secondAttribute="leading" id="x38-dP-b3d"/>
+                            <constraint firstItem="2Hw-Ye-Uvg" firstAttribute="trailing" secondItem="xDD-DS-sor" secondAttribute="trailing" id="zes-xW-Dmg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Hw-Ye-Uvg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="003-home" id="5ON-rZ-99a"/>
+                    <connections>
+                        <outlet property="accessaries" destination="3Qu-Ee-pfH" id="5NG-Yu-s8m"/>
+                        <outlet property="bottom" destination="tNd-tJ-eMS" id="90b-9V-lDr"/>
+                        <outlet property="top" destination="w1N-Fp-tHH" id="WSg-Jw-KcX"/>
+                        <segue destination="A93-RU-q8t" kind="show" identifier="SegueToItemsPg" id="V6R-lb-uea"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Fw-CX-7wp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.6" y="-666.50246305418727"/>
+        </scene>
+        <!--Item List-->
+        <scene sceneID="fGn-qX-rqf">
+            <objects>
+                <tableViewController id="elF-0t-sIK" customClass="ItemTablePgController" customModule="ForeverShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bFg-dN-qR3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemID" textLabel="Lgd-LY-X0o" detailTextLabel="saB-U5-fL5" style="IBUITableViewCellStyleValue1" id="D2L-CL-LgX">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D2L-CL-LgX" id="e36-IQ-fuz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lgd-LY-X0o">
+                                            <rect key="frame" x="16" y="7" width="52.5" height="30"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Title">
+                                                    <attributes>
+                                                        <font key="NSFont" size="25" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="saB-U5-fL5">
+                                            <rect key="frame" x="282.5" y="9" width="76.5" height="28"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Subtitle">
+                                                    <attributes>
+                                                        <font key="NSFont" size="23" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="LOJ-kG-uBZ" kind="show" id="MGL-MN-xgy"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="elF-0t-sIK" id="sX8-Gb-vdH"/>
+                            <outlet property="delegate" destination="elF-0t-sIK" id="hcF-s2-pwN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Item List" id="ljt-ci-h4F">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="IWU-Fm-LcS">
+                            <connections>
+                                <action selector="backtToHomePg:" destination="elF-0t-sIK" id="WNZ-vf-Fax"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPu-Mn-sEQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2752.8000000000002" y="-665.02463054187194"/>
+        </scene>
+        <!--Item Detail-->
+        <scene sceneID="19k-z0-q4I">
+            <objects>
+                <viewController title="Item Detail" id="LOJ-kG-uBZ" customClass="ItemDetailPgController" customModule="ForeverShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h1D-Sf-fEB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hH0-Ie-3j0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="249"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="inC-Ye-Aeq">
+                                <rect key="frame" x="20" y="333" width="335" height="314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xai-T7-5d6">
+                                        <rect key="frame" x="111.5" y="0.0" width="112.5" height="17"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Item's name">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOd-Se-4Pw">
+                                        <rect key="frame" x="145" y="34" width="45" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="x8d-f4-dFm"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="price">
+                                                <attributes>
+                                                    <font key="NSFont" size="23" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vny-Rt-DFq">
+                                        <rect key="frame" x="106" y="76" width="123" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Jgs-6j-MJU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                        <state key="normal" title="Add to Cart"/>
+                                        <connections>
+                                            <action selector="addToCart:" destination="LOJ-kG-uBZ" eventType="touchUpInside" id="4h2-l7-mwN"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXV-ha-JKx">
+                                        <rect key="frame" x="19" y="123" width="297" height="191"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="191" id="f8f-gw-3bG"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="This is item description.">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TXV-ha-JKx" firstAttribute="top" secondItem="Vny-Rt-DFq" secondAttribute="bottom" constant="17" id="Agk-kt-iEV"/>
+                                    <constraint firstAttribute="trailing" secondItem="TXV-ha-JKx" secondAttribute="trailing" constant="19" id="JWS-o0-iwr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="inC-Ye-Aeq" firstAttribute="leading" secondItem="RXi-Zo-hHn" secondAttribute="leading" constant="20" id="99b-QZ-K8r"/>
+                            <constraint firstItem="inC-Ye-Aeq" firstAttribute="top" secondItem="hH0-Ie-3j0" secondAttribute="bottom" constant="20" id="feH-eC-sTj"/>
+                            <constraint firstItem="RXi-Zo-hHn" firstAttribute="bottom" secondItem="inC-Ye-Aeq" secondAttribute="bottom" constant="20" id="ja2-Tr-9BL"/>
+                            <constraint firstItem="RXi-Zo-hHn" firstAttribute="bottom" secondItem="hH0-Ie-3j0" secondAttribute="bottom" constant="354" id="osM-Ar-Q7h"/>
+                            <constraint firstItem="hH0-Ie-3j0" firstAttribute="top" secondItem="RXi-Zo-hHn" secondAttribute="top" id="qmy-lW-Y2m"/>
+                            <constraint firstItem="hH0-Ie-3j0" firstAttribute="leading" secondItem="RXi-Zo-hHn" secondAttribute="leading" id="t7m-Mo-c9l"/>
+                            <constraint firstItem="RXi-Zo-hHn" firstAttribute="trailing" secondItem="hH0-Ie-3j0" secondAttribute="trailing" id="uLw-2x-Kgk"/>
+                            <constraint firstItem="RXi-Zo-hHn" firstAttribute="trailing" secondItem="inC-Ye-Aeq" secondAttribute="trailing" constant="20" id="weM-xa-mgR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RXi-Zo-hHn"/>
+                    </view>
+                    <connections>
+                        <outlet property="detail" destination="TXV-ha-JKx" id="IT1-Kg-0Ca"/>
+                        <outlet property="image" destination="hH0-Ie-3j0" id="RPC-5O-mj8"/>
+                        <outlet property="itemName" destination="Xai-T7-5d6" id="FCw-xs-BgT"/>
+                        <outlet property="price" destination="dOd-Se-4Pw" id="9y6-Y9-QPW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLA-Ho-LwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3652" y="-666.50246305418727"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L3e-Qg-LtI">
+            <objects>
+                <navigationController id="A93-RU-q8t" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gxp-eE-cKf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="elF-0t-sIK" kind="relationship" relationship="rootViewController" id="eME-5Z-F2w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QO7-uF-Ryc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="-665"/>
+        </scene>
+        <!--Welcome-->
+        <scene sceneID="A5m-7H-5Pe">
+            <objects>
+                <viewController title="Welcome" id="BZ9-N9-0bg" customClass="WelcomePgController" customModule="ForeverShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2VY-Ew-JUf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQW-ZM-8gT">
+                                <rect key="frame" x="0.0" y="20" width="190" height="540"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="9CC-FZ-cmo"/>
+                                    <constraint firstAttribute="height" constant="540" id="Kqc-jm-bP8"/>
+                                </constraints>
+                                <state key="normal" title="Women" image="Welcome-girls-slim">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toWomenIndexPg:" destination="BZ9-N9-0bg" eventType="touchUpInside" id="Af5-OK-qB6"/>
+                                    <action selector="womenCategory:" destination="BZ9-N9-0bg" eventType="touchUpInside" id="DYu-Db-0y1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvS-om-lhV">
+                                <rect key="frame" x="190" y="147" width="185" height="520"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="Mqu-Q5-OAa"/>
+                                    <constraint firstAttribute="height" constant="520" id="jWW-K1-VKk"/>
+                                </constraints>
+                                <state key="normal" title="Men" image="Welcome-guys-slim">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="menCategory:" destination="BZ9-N9-0bg" eventType="touchUpInside" id="eMa-yZ-64W"/>
+                                    <action selector="toMenIndexPg:" destination="BZ9-N9-0bg" eventType="touchUpInside" id="SEU-ln-xIy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forever Shopping" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXX-21-HVY">
+                                <rect key="frame" x="205" y="13" width="155" height="84"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87006321132491904" green="0.87006321132491904" blue="0.87006321132491904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NQW-ZM-8gT" firstAttribute="top" secondItem="REs-co-sN9" secondAttribute="top" id="EIs-2r-UJn"/>
+                            <constraint firstItem="NQW-ZM-8gT" firstAttribute="leading" secondItem="REs-co-sN9" secondAttribute="leading" id="G8f-vW-pId"/>
+                            <constraint firstItem="BvS-om-lhV" firstAttribute="top" secondItem="eXX-21-HVY" secondAttribute="bottom" constant="50" id="Trj-KH-Ij5"/>
+                            <constraint firstItem="REs-co-sN9" firstAttribute="trailing" secondItem="eXX-21-HVY" secondAttribute="trailing" constant="15" id="bVG-iH-y6H"/>
+                            <constraint firstItem="BvS-om-lhV" firstAttribute="bottom" secondItem="REs-co-sN9" secondAttribute="bottom" id="hPy-LL-lLz"/>
+                            <constraint firstItem="BvS-om-lhV" firstAttribute="trailing" secondItem="REs-co-sN9" secondAttribute="trailing" id="tdP-1D-aaH"/>
+                            <constraint firstItem="eXX-21-HVY" firstAttribute="leading" secondItem="NQW-ZM-8gT" secondAttribute="trailing" constant="15" id="tvV-dd-VV6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="REs-co-sN9"/>
+                    </view>
+                    <connections>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="segueToIndexPg" id="nZc-EU-9co"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ulo-64-NsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-730.39999999999998" y="-0.73891625615763545"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Dnx-h2-laK" kind="relationship" relationship="viewControllers" id="QDx-Dj-xhe"/>
+                        <segue destination="oIz-Ae-zbK" kind="relationship" relationship="viewControllers" id="4Bt-jX-J97"/>
+                        <segue destination="AFa-3z-j3Q" kind="relationship" relationship="viewControllers" id="5dx-IS-Njt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15" y="0.0"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="Zgw-vH-XVr">
+            <objects>
+                <viewController id="oIz-Ae-zbK" customClass="CartPgController" customModule="ForeverShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KsX-mS-CDl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5O-gC-Zd7">
+                                <rect key="frame" x="133" y="526" width="109" height="42"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                <state key="normal" title="Check Out"/>
+                                <connections>
+                                    <action selector="toCheckOutPg:" destination="oIz-Ae-zbK" eventType="touchUpInside" id="NEH-b4-ozo"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IEQ-gt-ADD">
+                                <rect key="frame" x="111.5" y="30" width="153" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHK-PS-cJx">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="30"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Total price:">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJ5-Nz-MoY">
+                                        <rect key="frame" x="139" y="0.0" width="14" height="30"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="0">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide to left to delete item in your cart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyM-Dp-Xkv">
+                                <rect key="frame" x="30" y="79.5" width="315" height="17"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sCA-8O-5UR">
+                                <rect key="frame" x="30" y="112" width="315" height="364.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Item" textLabel="JY4-sC-a6r" detailTextLabel="RxM-j3-j8e" style="IBUITableViewCellStyleValue1" id="fUY-ai-il1">
+                                        <rect key="frame" x="0.0" y="28" width="315" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fUY-ai-il1" id="E0T-6k-nB8">
+                                            <rect key="frame" x="0.0" y="0.0" width="315" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JY4-sC-a6r">
+                                                    <rect key="frame" x="15" y="8" width="48" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Title">
+                                                            <attributes>
+                                                                <font key="NSFont" size="23" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RxM-j3-j8e">
+                                                    <rect key="frame" x="233.5" y="11" width="66.5" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Subtitle">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qcb-DX-yyW" firstAttribute="bottom" secondItem="B5O-gC-Zd7" secondAttribute="bottom" constant="50" id="0FU-hz-Fpo"/>
+                            <constraint firstItem="IEQ-gt-ADD" firstAttribute="top" secondItem="qcb-DX-yyW" secondAttribute="top" constant="10" id="2ru-dO-nbi"/>
+                            <constraint firstItem="B5O-gC-Zd7" firstAttribute="top" secondItem="sCA-8O-5UR" secondAttribute="bottom" constant="50" id="GxT-Io-mAR"/>
+                            <constraint firstItem="IEQ-gt-ADD" firstAttribute="centerX" secondItem="KsX-mS-CDl" secondAttribute="centerX" id="d7W-3o-qJk"/>
+                            <constraint firstItem="gyM-Dp-Xkv" firstAttribute="leading" secondItem="qcb-DX-yyW" secondAttribute="leading" constant="30" id="g2P-1D-Qcc"/>
+                            <constraint firstItem="sCA-8O-5UR" firstAttribute="top" secondItem="gyM-Dp-Xkv" secondAttribute="bottom" constant="15" id="gh7-mm-tQz"/>
+                            <constraint firstItem="qcb-DX-yyW" firstAttribute="trailing" secondItem="sCA-8O-5UR" secondAttribute="trailing" constant="30" id="hL9-OB-wa1"/>
+                            <constraint firstItem="gyM-Dp-Xkv" firstAttribute="top" secondItem="IEQ-gt-ADD" secondAttribute="bottom" constant="20" id="lcR-WA-eca"/>
+                            <constraint firstItem="sCA-8O-5UR" firstAttribute="leading" secondItem="qcb-DX-yyW" secondAttribute="leading" constant="30" id="sFr-dH-IpT"/>
+                            <constraint firstItem="qcb-DX-yyW" firstAttribute="trailing" secondItem="gyM-Dp-Xkv" secondAttribute="trailing" constant="30" id="tGK-Io-MlV"/>
+                            <constraint firstItem="B5O-gC-Zd7" firstAttribute="centerX" secondItem="KsX-mS-CDl" secondAttribute="centerX" id="vfm-Yr-wAe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qcb-DX-yyW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cart" image="002-shopping-cart" id="YC5-3E-E3R"/>
+                    <connections>
+                        <outlet property="cartTableView" destination="sCA-8O-5UR" id="83h-Qt-Q1g"/>
+                        <outlet property="totalPriceLabel" destination="lJ5-Nz-MoY" id="xvY-7X-bsV"/>
+                        <segue destination="gsu-VN-eR8" kind="show" identifier="SeguetoCheckOutPg" id="6sm-5v-XjH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ow-xP-bUt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008.8" y="0.73891625615763545"/>
+        </scene>
+        <!--Check Out-->
+        <scene sceneID="1Vt-jn-wvj">
+            <objects>
+                <viewController title="Check Out" id="gsu-VN-eR8" customClass="CheckOutPgController" customModule="ForeverShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xDh-ab-RTE" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="OjP-UH-TfE">
+                                <rect key="frame" x="35" y="60" width="154" height="260"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peF-Co-uka">
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="28"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Name:">
+                                                <attributes>
+                                                    <font key="NSFont" size="23" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhi-Jr-e7H">
+                                        <rect key="frame" x="0.0" y="58" width="113.5" height="28"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmi-x6-EUC">
+                                        <rect key="frame" x="0.0" y="116" width="109.5" height="28"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vze-ND-vNZ">
+                                        <rect key="frame" x="0.0" y="174" width="125.5" height="28"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mailing Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hf-oP-XAy">
+                                        <rect key="frame" x="0.0" y="232" width="154" height="28"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xBR-nl-T7r">
+                                <rect key="frame" x="294.5" y="60" width="45.5" height="165"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Z3-HO-bIc">
+                                        <rect key="frame" x="0.0" y="0.0" width="45.5" height="24"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyX-Lk-wLo">
+                                        <rect key="frame" x="0.0" y="70.5" width="45.5" height="24"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKg-Wb-exd">
+                                        <rect key="frame" x="0.0" y="141" width="45.5" height="24"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lkB-DH-nVV" customClass="SignatureView" customModule="ForeverShoppingApp" customModuleProvider="target">
+                                <rect key="frame" x="40" y="435" width="295" height="130"/>
+                                <color key="backgroundColor" red="0.79001745290847158" green="1" blue="0.97334392667773961" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="3MH-gC-V2X"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpZ-Mp-7oa">
+                                <rect key="frame" x="35" y="397" width="95.5" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Signature:">
+                                        <attributes>
+                                            <font key="NSFont" size="23" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="PCy-B9-xA7">
+                                <rect key="frame" x="49" y="585" width="277" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBF-Nk-OOv">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="42"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelPressed:" destination="gsu-VN-eR8" eventType="touchUpInside" id="H8T-G8-dar"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0s-he-W5J">
+                                        <rect key="frame" x="172" y="0.0" width="105" height="42"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                        <state key="normal" title="Confirmed"/>
+                                        <connections>
+                                            <action selector="donePressed:" destination="gsu-VN-eR8" eventType="touchUpInside" id="4ww-tR-TPn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rpk-RS-1pO">
+                                <rect key="frame" x="35" y="330" width="305" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="street-address"/>
+                                <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="credit card number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WuV-Ik-2xU">
+                                <rect key="frame" x="179" y="255" width="180" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="bki-zq-pB3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="cc-number"/>
+                                <connections>
+                                    <action selector="editEnded:" destination="gsu-VN-eR8" eventType="editingDidEndOnExit" id="P6S-Xx-nu1"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PCy-B9-xA7" firstAttribute="centerX" secondItem="xDh-ab-RTE" secondAttribute="centerX" id="0fh-g4-8CE"/>
+                            <constraint firstItem="lkB-DH-nVV" firstAttribute="top" secondItem="dpZ-Mp-7oa" secondAttribute="bottom" constant="10" id="3Pl-aG-8jE"/>
+                            <constraint firstItem="OjP-UH-TfE" firstAttribute="leading" secondItem="DGG-Lq-qxe" secondAttribute="leading" constant="35" id="5yE-C1-whg"/>
+                            <constraint firstItem="DGG-Lq-qxe" firstAttribute="bottom" secondItem="PCy-B9-xA7" secondAttribute="bottom" constant="40" id="6Dv-9Y-T1X"/>
+                            <constraint firstItem="WuV-Ik-2xU" firstAttribute="top" secondItem="xDh-ab-RTE" secondAttribute="top" constant="255" id="6sK-Uw-d32"/>
+                            <constraint firstItem="WuV-Ik-2xU" firstAttribute="trailing" secondItem="xDh-ab-RTE" secondAttribute="trailingMargin" id="9Dz-Rg-AIQ"/>
+                            <constraint firstItem="OjP-UH-TfE" firstAttribute="top" secondItem="DGG-Lq-qxe" secondAttribute="top" constant="40" id="HX1-so-Ibm"/>
+                            <constraint firstItem="rpk-RS-1pO" firstAttribute="centerX" secondItem="xDh-ab-RTE" secondAttribute="centerX" id="JqO-Io-We7"/>
+                            <constraint firstItem="lkB-DH-nVV" firstAttribute="leading" secondItem="DGG-Lq-qxe" secondAttribute="leading" constant="40" id="KN3-6p-vaZ"/>
+                            <constraint firstItem="DGG-Lq-qxe" firstAttribute="trailing" secondItem="lkB-DH-nVV" secondAttribute="trailing" constant="40" id="Qnr-Wg-xrl"/>
+                            <constraint firstItem="dpZ-Mp-7oa" firstAttribute="top" secondItem="rpk-RS-1pO" secondAttribute="bottom" constant="15" id="a8u-qz-ppN"/>
+                            <constraint firstItem="DGG-Lq-qxe" firstAttribute="trailing" secondItem="xBR-nl-T7r" secondAttribute="trailing" constant="35" id="afJ-JE-5d4"/>
+                            <constraint firstItem="rpk-RS-1pO" firstAttribute="leading" secondItem="DGG-Lq-qxe" secondAttribute="leading" constant="35" id="biu-jF-kPd"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dpZ-Mp-7oa" secondAttribute="trailing" constant="20" symbolic="YES" id="gqk-UK-QIG"/>
+                            <constraint firstItem="xBR-nl-T7r" firstAttribute="top" secondItem="DGG-Lq-qxe" secondAttribute="top" constant="40" id="h4C-QL-dEv"/>
+                            <constraint firstItem="WuV-Ik-2xU" firstAttribute="top" secondItem="xBR-nl-T7r" secondAttribute="bottom" constant="30" id="khG-Bz-8eM"/>
+                            <constraint firstItem="PCy-B9-xA7" firstAttribute="top" secondItem="lkB-DH-nVV" secondAttribute="bottom" constant="20" id="oJx-6C-ltq"/>
+                            <constraint firstItem="dpZ-Mp-7oa" firstAttribute="leading" secondItem="DGG-Lq-qxe" secondAttribute="leading" constant="35" id="q6t-Nj-bls"/>
+                            <constraint firstItem="DGG-Lq-qxe" firstAttribute="trailing" secondItem="rpk-RS-1pO" secondAttribute="trailing" constant="35" id="rgq-ji-G1b"/>
+                            <constraint firstItem="rpk-RS-1pO" firstAttribute="top" secondItem="OjP-UH-TfE" secondAttribute="bottom" constant="10" id="ssL-Ov-7UZ"/>
+                            <constraint firstItem="WuV-Ik-2xU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xDh-ab-RTE" secondAttribute="leading" constant="20" symbolic="YES" id="vLZ-Bb-YAo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DGG-Lq-qxe"/>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="gsu-VN-eR8" eventType="touchDown" id="4N2-gc-wfg"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="itemNumLabel" destination="gyX-Lk-wLo" id="06P-KG-sEi"/>
+                        <outlet property="mailAddressTextView" destination="rpk-RS-1pO" id="2Sg-KD-l3h"/>
+                        <outlet property="totalPriceLabel" destination="BKg-Wb-exd" id="4Kq-BX-JwE"/>
+                        <outlet property="usernameLabel" destination="2Z3-HO-bIc" id="gNY-sY-yA4"/>
+                        <outletCollection property="textFields" destination="WuV-Ik-2xU" collectionClass="NSMutableArray" id="uYL-sU-EOi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rqh-hv-ds1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="0.73891625615763545"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="dDt-54-Im7">
+            <objects>
+                <viewController id="AFa-3z-j3Q" customClass="AccountPgController" customModule="ForeverShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CbY-mD-vVX" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1S-QA-DUS" customClass="WelcomView" customModule="ForeverShoppingApp" customModuleProvider="target">
+                                <rect key="frame" x="35" y="172" width="305" height="282"/>
+                                <color key="backgroundColor" red="0.93173338619538537" green="0.93173338619538537" blue="0.93173338619538537" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Rkv-ZJ-0Aa">
+                                <rect key="frame" x="40" y="162" width="295" height="90"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AdB-9P-pg4">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                        <connections>
+                                            <action selector="editEnded:" destination="AFa-3z-j3Q" eventType="editingDidEndOnExit" id="bYN-vB-DgT"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HiC-fl-7F8">
+                                        <rect key="frame" x="0.0" y="60" width="295" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <connections>
+                                            <action selector="editEnded:" destination="AFa-3z-j3Q" eventType="editingDidEndOnExit" id="Y7r-iK-gpl"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6d-bD-Phe">
+                                <rect key="frame" x="141" y="80" width="93" height="42"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="35"/>
+                                <color key="textColor" red="0.32332820595854928" green="0.2812983419629867" blue="0.28527484770109363" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkb-KO-zKe">
+                                <rect key="frame" x="156" y="302" width="63" height="42"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="logInPressed:" destination="AFa-3z-j3Q" eventType="touchUpInside" id="I82-R3-K2f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaC-eg-bIm">
+                                <rect key="frame" x="118" y="400" width="151" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="IyO-nX-yRy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                <state key="normal" title="New Customer?"/>
+                                <connections>
+                                    <segue destination="gIr-qW-t4m" kind="show" id="Adc-WD-s1l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpG-VR-lPS">
+                                <rect key="frame" x="40" y="40" width="306" height="106"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome to Forever Shopping">
+                                        <attributes>
+                                            <font key="NSFont" size="35" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.049943397180000002" green="0.86458910929999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xt-DZ-d7d">
+                                <rect key="frame" x="138" y="451" width="111" height="42"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                <state key="normal" title="Guest User"/>
+                                <connections>
+                                    <action selector="guestLogInPressed:" destination="AFa-3z-j3Q" eventType="touchUpInside" id="IIh-Mt-dXI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRG-r9-9Pn">
+                                <rect key="frame" x="146" y="489" width="82" height="42"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                <state key="normal" title="Log Off"/>
+                                <connections>
+                                    <action selector="logOffPressed:" destination="AFa-3z-j3Q" eventType="touchUpInside" id="oK8-b9-GR2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o1S-QA-DUS" firstAttribute="leading" secondItem="iO1-WP-Spz" secondAttribute="leading" constant="35" id="04Z-pm-Ocl"/>
+                            <constraint firstItem="8Xt-DZ-d7d" firstAttribute="top" secondItem="RaC-eg-bIm" secondAttribute="bottom" constant="8" id="3l2-z0-kqV"/>
+                            <constraint firstItem="RRG-r9-9Pn" firstAttribute="top" secondItem="o1S-QA-DUS" secondAttribute="bottom" constant="35" id="EiA-sl-0IN"/>
+                            <constraint firstItem="RaC-eg-bIm" firstAttribute="centerX" secondItem="8Xt-DZ-d7d" secondAttribute="centerX" id="Ez2-MP-gAs"/>
+                            <constraint firstItem="iO1-WP-Spz" firstAttribute="trailing" secondItem="Rkv-ZJ-0Aa" secondAttribute="trailing" constant="40" id="Kwq-Lj-reV"/>
+                            <constraint firstItem="Rkv-ZJ-0Aa" firstAttribute="leading" secondItem="iO1-WP-Spz" secondAttribute="leading" constant="40" id="MnJ-tn-Lo0"/>
+                            <constraint firstItem="RRG-r9-9Pn" firstAttribute="centerX" secondItem="CbY-mD-vVX" secondAttribute="centerX" id="QBQ-k3-OhY"/>
+                            <constraint firstItem="iO1-WP-Spz" firstAttribute="bottom" secondItem="RRG-r9-9Pn" secondAttribute="bottom" constant="87" id="R2J-G1-fFf"/>
+                            <constraint firstItem="RaC-eg-bIm" firstAttribute="top" secondItem="o1S-QA-DUS" secondAttribute="bottom" constant="-54" id="RCW-86-cZn"/>
+                            <constraint firstItem="iO1-WP-Spz" firstAttribute="trailing" secondItem="QpG-VR-lPS" secondAttribute="trailing" constant="29" id="YX3-bt-xrD"/>
+                            <constraint firstItem="RaC-eg-bIm" firstAttribute="leading" secondItem="iO1-WP-Spz" secondAttribute="leading" constant="118" id="Yzu-Xi-gux"/>
+                            <constraint firstItem="Rkv-ZJ-0Aa" firstAttribute="top" secondItem="x6d-bD-Phe" secondAttribute="bottom" constant="40" id="Z6g-0Z-6DC"/>
+                            <constraint firstItem="iO1-WP-Spz" firstAttribute="trailing" secondItem="o1S-QA-DUS" secondAttribute="trailing" constant="35" id="aTw-kq-iRz"/>
+                            <constraint firstItem="QpG-VR-lPS" firstAttribute="leading" secondItem="Rkv-ZJ-0Aa" secondAttribute="leading" id="eam-hm-Nw6"/>
+                            <constraint firstItem="Rkv-ZJ-0Aa" firstAttribute="centerX" secondItem="CbY-mD-vVX" secondAttribute="centerX" id="esi-rL-jwS"/>
+                            <constraint firstItem="jkb-KO-zKe" firstAttribute="centerX" secondItem="CbY-mD-vVX" secondAttribute="centerX" id="gch-kw-cIZ"/>
+                            <constraint firstItem="x6d-bD-Phe" firstAttribute="centerX" secondItem="CbY-mD-vVX" secondAttribute="centerX" id="hyy-OI-Qt1"/>
+                            <constraint firstItem="x6d-bD-Phe" firstAttribute="top" secondItem="iO1-WP-Spz" secondAttribute="top" constant="60" id="ixR-9S-447"/>
+                            <constraint firstItem="o1S-QA-DUS" firstAttribute="centerX" secondItem="CbY-mD-vVX" secondAttribute="centerX" id="lTG-WQ-Cci"/>
+                            <constraint firstItem="QpG-VR-lPS" firstAttribute="top" secondItem="iO1-WP-Spz" secondAttribute="top" constant="20" id="rix-fL-26l"/>
+                            <constraint firstItem="Rkv-ZJ-0Aa" firstAttribute="top" secondItem="QpG-VR-lPS" secondAttribute="bottom" constant="16" id="rkc-Rx-snb"/>
+                            <constraint firstItem="jkb-KO-zKe" firstAttribute="top" secondItem="Rkv-ZJ-0Aa" secondAttribute="bottom" constant="50" id="tdD-Xl-hxJ"/>
+                            <constraint firstItem="o1S-QA-DUS" firstAttribute="top" secondItem="iO1-WP-Spz" secondAttribute="top" constant="152" id="wD3-IZ-ZjK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iO1-WP-Spz"/>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="AFa-3z-j3Q" eventType="touchDown" id="xBk-Su-SZe"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="001-round-account-button-with-user-inside" id="6qT-J7-25j"/>
+                    <connections>
+                        <outlet property="guestButton" destination="8Xt-DZ-d7d" id="jsy-br-okj"/>
+                        <outlet property="loginButton" destination="jkb-KO-zKe" id="rV8-yH-XUH"/>
+                        <outlet property="logoffButton" destination="RRG-r9-9Pn" id="uMa-U8-waT"/>
+                        <outlet property="newCustomerButton" destination="RaC-eg-bIm" id="i37-vj-8ak"/>
+                        <outlet property="titleLable" destination="x6d-bD-Phe" id="o1m-XI-FRV"/>
+                        <outlet property="welcomeLable" destination="QpG-VR-lPS" id="1kp-yJ-7s6"/>
+                        <outlet property="welcomeView" destination="o1S-QA-DUS" id="XVy-Jq-V1y"/>
+                        <outletCollection property="textFields" destination="AdB-9P-pg4" collectionClass="NSMutableArray" id="GdF-FJ-gJc"/>
+                        <outletCollection property="textFields" destination="HiC-fl-7F8" collectionClass="NSMutableArray" id="aLX-xB-3vX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b5A-d0-xk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.79999999999995" y="808.24587706146929"/>
+        </scene>
+        <!--Sign Up-->
+        <scene sceneID="dM3-tn-T6L">
+            <objects>
+                <viewController title="Sign Up" id="gIr-qW-t4m" customClass="SignUpPgController" customModule="ForeverShoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CCH-3a-wQK" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yy6-Eg-1es">
+                                <rect key="frame" x="137" y="30" width="102.5" height="42"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bO2-R7-77r">
+                                <rect key="frame" x="32" y="122" width="311" height="173"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5TB-5A-zbh">
+                                        <rect key="frame" x="0.0" y="0.0" width="299.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziB-ZZ-9ua">
+                                                <rect key="frame" x="0.0" y="0.0" width="99.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IP2-Zu-9wf">
+                                                <rect key="frame" x="119.5" y="0.0" width="180" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="180" id="IxE-fd-GTp"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                <connections>
+                                                    <action selector="editEnded:" destination="gIr-qW-t4m" eventType="editingDidEndOnExit" id="7R4-A4-B1n"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zYx-S5-76T">
+                                        <rect key="frame" x="0.0" y="47.5" width="299" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrC-KH-gvv">
+                                                <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Last Name:">
+                                                        <attributes>
+                                                            <font key="NSFont" size="23" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cyu-4R-151">
+                                                <rect key="frame" x="119" y="0.0" width="180" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="180" id="Mu5-2B-VpF"/>
+                                                    <constraint firstAttribute="height" constant="30" id="OKe-Q6-ZSb"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                <connections>
+                                                    <action selector="editEnded:" destination="gIr-qW-t4m" eventType="editingDidEndOnExit" id="HV9-fO-xF8"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hG2-YB-lYx">
+                                        <rect key="frame" x="0.0" y="95.5" width="307.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PG-Pf-Hu7">
+                                                <rect key="frame" x="0.0" y="0.0" width="57.5" height="30"/>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kbg-dh-GWw">
+                                                <rect key="frame" x="77.5" y="0.0" width="230" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="230" id="6Nm-UT-3S4"/>
+                                                    <constraint firstAttribute="height" constant="30" id="II8-Jh-ffS"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                                <connections>
+                                                    <action selector="editEnded:" destination="gIr-qW-t4m" eventType="editingDidEndOnExit" id="Ejs-ce-Eso"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lrI-vN-v9h">
+                                        <rect key="frame" x="0.0" y="143" width="293" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlP-xe-Ino">
+                                                <rect key="frame" x="0.0" y="0.0" width="93" height="30"/>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NaI-UO-eNb">
+                                                <rect key="frame" x="113" y="0.0" width="180" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="48f-64-lub"/>
+                                                    <constraint firstAttribute="width" constant="180" id="Jtq-6b-APq"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <action selector="editEnded:" destination="gIr-qW-t4m" eventType="editingDidEndOnExit" id="OZo-bA-f6N"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="V0J-Yw-9Fm">
+                                <rect key="frame" x="107" y="325" width="161" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQa-Ia-y7v">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="42"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="gIr-qW-t4m" eventType="touchUpInside" id="JiL-ht-Tbn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOz-OA-Jjc">
+                                        <rect key="frame" x="122" y="0.0" width="39" height="42"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                        <state key="normal" title="Join"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="gIr-qW-t4m" eventType="touchUpInside" id="a7B-xI-GVB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y2q-gg-tV8" firstAttribute="trailing" secondItem="bO2-R7-77r" secondAttribute="trailing" constant="32" id="Ng4-Fz-jak"/>
+                            <constraint firstItem="V0J-Yw-9Fm" firstAttribute="top" secondItem="bO2-R7-77r" secondAttribute="bottom" constant="30" id="PvL-3k-fhL"/>
+                            <constraint firstItem="yy6-Eg-1es" firstAttribute="top" secondItem="CCH-3a-wQK" secondAttribute="top" constant="30" id="QBB-tW-vOb"/>
+                            <constraint firstItem="bO2-R7-77r" firstAttribute="leading" secondItem="Y2q-gg-tV8" secondAttribute="leading" constant="32" id="dJG-GW-SGF"/>
+                            <constraint firstItem="bO2-R7-77r" firstAttribute="top" secondItem="yy6-Eg-1es" secondAttribute="bottom" constant="50" id="ivn-uv-d8n"/>
+                            <constraint firstItem="yy6-Eg-1es" firstAttribute="centerX" secondItem="CCH-3a-wQK" secondAttribute="centerX" id="tfc-0G-fyr"/>
+                            <constraint firstItem="V0J-Yw-9Fm" firstAttribute="centerX" secondItem="CCH-3a-wQK" secondAttribute="centerX" id="uMw-4b-AmC"/>
+                            <constraint firstItem="Y2q-gg-tV8" firstAttribute="bottom" secondItem="V0J-Yw-9Fm" secondAttribute="bottom" constant="300" id="ypc-Lk-h1u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y2q-gg-tV8"/>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="gIr-qW-t4m" eventType="touchDown" id="QZV-Om-BnS"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outletCollection property="signUpTextFields" destination="IP2-Zu-9wf" collectionClass="NSMutableArray" id="ir6-uR-hdh"/>
+                        <outletCollection property="signUpTextFields" destination="cyu-4R-151" collectionClass="NSMutableArray" id="OWj-cF-lLj"/>
+                        <outletCollection property="signUpTextFields" destination="kbg-dh-GWw" collectionClass="NSMutableArray" id="x7x-Mw-lTV"/>
+                        <outletCollection property="signUpTextFields" destination="NaI-UO-eNb" collectionClass="NSMutableArray" id="oqZ-RL-t5F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPZ-15-jgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1616.8" y="807.63546798029563"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="001-round-account-button-with-user-inside" width="32" height="32"/>
+        <image name="002-shopping-cart" width="32" height="32"/>
+        <image name="003-home" width="32" height="32"/>
+        <image name="Welcome-girls-slim" width="360" height="900"/>
+        <image name="Welcome-guys-slim" width="344" height="859"/>
+    </resources>
+</document>

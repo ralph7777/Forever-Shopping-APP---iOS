@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		363461CE204B20E4005CE4F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363461CD204B20E4005CE4F9 /* AppDelegate.swift */; };
+		363461D0204B20E4005CE4F9 /* HomePgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363461CF204B20E4005CE4F9 /* HomePgController.swift */; };
+		363461D5204B20E4005CE4F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363461D3204B20E4005CE4F9 /* Main.storyboard */; };
+		363461D7204B20E4005CE4F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363461D6204B20E4005CE4F9 /* Assets.xcassets */; };
+		363461DA204B20E4005CE4F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363461D8204B20E4005CE4F9 /* LaunchScreen.storyboard */; };
+		363461E5204B20E4005CE4F9 /* ForeverShoppingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363461E4204B20E4005CE4F9 /* ForeverShoppingAppTests.swift */; };
+		363461F0204B20E4005CE4F9 /* ForeverShoppingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363461EF204B20E4005CE4F9 /* ForeverShoppingAppUITests.swift */; };
+		363461FE204B217B005CE4F9 /* WelcomePgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363461FD204B217B005CE4F9 /* WelcomePgController.swift */; };
+		36346204204B2D5F005CE4F9 /* CartPgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36346203204B2D5F005CE4F9 /* CartPgController.swift */; };
+		36346206204B2DC0005CE4F9 /* AccountPgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36346205204B2DC0005CE4F9 /* AccountPgController.swift */; };
+		3634620C204B3FEE005CE4F9 /* ItemTablePgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634620B204B3FEE005CE4F9 /* ItemTablePgController.swift */; };
+		36346210204B4067005CE4F9 /* ItemDetailPgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634620F204B4067005CE4F9 /* ItemDetailPgController.swift */; };
+		36346212204B4688005CE4F9 /* CheckOutPgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36346211204B4688005CE4F9 /* CheckOutPgController.swift */; };
+		36346214204B5CAD005CE4F9 /* SignUpPgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36346213204B5CAD005CE4F9 /* SignUpPgController.swift */; };
+		363B77D820531F26007D6717 /* WelcomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363B77D720531F26007D6717 /* WelcomView.swift */; };
+		369520A8205089A600DDA98B /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369520A7205089A600DDA98B /* Items.swift */; };
+		369520AA2050952200DDA98B /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369520A92050952200DDA98B /* SignatureView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		363461E1204B20E4005CE4F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 363461C2204B20E3005CE4F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 363461C9204B20E4005CE4F9;
+			remoteInfo = ForeverShoppingApp;
+		};
+		363461EC204B20E4005CE4F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 363461C2204B20E3005CE4F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 363461C9204B20E4005CE4F9;
+			remoteInfo = ForeverShoppingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		363461CA204B20E4005CE4F9 /* ForeverShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForeverShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		363461CD204B20E4005CE4F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		363461CF204B20E4005CE4F9 /* HomePgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePgController.swift; sourceTree = "<group>"; };
+		363461D4204B20E4005CE4F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		363461D6204B20E4005CE4F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		363461D9204B20E4005CE4F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		363461DB204B20E4005CE4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363461E0204B20E4005CE4F9 /* ForeverShoppingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForeverShoppingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		363461E4204B20E4005CE4F9 /* ForeverShoppingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeverShoppingAppTests.swift; sourceTree = "<group>"; };
+		363461E6204B20E4005CE4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363461EB204B20E4005CE4F9 /* ForeverShoppingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForeverShoppingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		363461EF204B20E4005CE4F9 /* ForeverShoppingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeverShoppingAppUITests.swift; sourceTree = "<group>"; };
+		363461F1204B20E4005CE4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363461FD204B217B005CE4F9 /* WelcomePgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePgController.swift; sourceTree = "<group>"; };
+		36346203204B2D5F005CE4F9 /* CartPgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPgController.swift; sourceTree = "<group>"; };
+		36346205204B2DC0005CE4F9 /* AccountPgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPgController.swift; sourceTree = "<group>"; };
+		3634620B204B3FEE005CE4F9 /* ItemTablePgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemTablePgController.swift; path = ../ItemTablePgController.swift; sourceTree = "<group>"; };
+		3634620F204B4067005CE4F9 /* ItemDetailPgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailPgController.swift; sourceTree = "<group>"; };
+		36346211204B4688005CE4F9 /* CheckOutPgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutPgController.swift; sourceTree = "<group>"; };
+		36346213204B5CAD005CE4F9 /* SignUpPgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPgController.swift; sourceTree = "<group>"; };
+		363B77D720531F26007D6717 /* WelcomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomView.swift; sourceTree = "<group>"; };
+		369520A7205089A600DDA98B /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		369520A92050952200DDA98B /* SignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		363461C7204B20E4005CE4F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363461DD204B20E4005CE4F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363461E8204B20E4005CE4F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		363461C1204B20E3005CE4F9 = {
+			isa = PBXGroup;
+			children = (
+				363461CC204B20E4005CE4F9 /* ForeverShoppingApp */,
+				363461E3204B20E4005CE4F9 /* ForeverShoppingAppTests */,
+				363461EE204B20E4005CE4F9 /* ForeverShoppingAppUITests */,
+				363461CB204B20E4005CE4F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		363461CB204B20E4005CE4F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				363461CA204B20E4005CE4F9 /* ForeverShoppingApp.app */,
+				363461E0204B20E4005CE4F9 /* ForeverShoppingAppTests.xctest */,
+				363461EB204B20E4005CE4F9 /* ForeverShoppingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		363461CC204B20E4005CE4F9 /* ForeverShoppingApp */ = {
+			isa = PBXGroup;
+			children = (
+				3634620F204B4067005CE4F9 /* ItemDetailPgController.swift */,
+				369520A7205089A600DDA98B /* Items.swift */,
+				3634620B204B3FEE005CE4F9 /* ItemTablePgController.swift */,
+				363461CD204B20E4005CE4F9 /* AppDelegate.swift */,
+				363461CF204B20E4005CE4F9 /* HomePgController.swift */,
+				363461D3204B20E4005CE4F9 /* Main.storyboard */,
+				369520A92050952200DDA98B /* SignatureView.swift */,
+				36346213204B5CAD005CE4F9 /* SignUpPgController.swift */,
+				36346205204B2DC0005CE4F9 /* AccountPgController.swift */,
+				36346203204B2D5F005CE4F9 /* CartPgController.swift */,
+				363461D6204B20E4005CE4F9 /* Assets.xcassets */,
+				363461D8204B20E4005CE4F9 /* LaunchScreen.storyboard */,
+				363461DB204B20E4005CE4F9 /* Info.plist */,
+				363461FD204B217B005CE4F9 /* WelcomePgController.swift */,
+				36346211204B4688005CE4F9 /* CheckOutPgController.swift */,
+				363B77D720531F26007D6717 /* WelcomView.swift */,
+			);
+			path = ForeverShoppingApp;
+			sourceTree = "<group>";
+		};
+		363461E3204B20E4005CE4F9 /* ForeverShoppingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				363461E4204B20E4005CE4F9 /* ForeverShoppingAppTests.swift */,
+				363461E6204B20E4005CE4F9 /* Info.plist */,
+			);
+			path = ForeverShoppingAppTests;
+			sourceTree = "<group>";
+		};
+		363461EE204B20E4005CE4F9 /* ForeverShoppingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				363461EF204B20E4005CE4F9 /* ForeverShoppingAppUITests.swift */,
+				363461F1204B20E4005CE4F9 /* Info.plist */,
+			);
+			path = ForeverShoppingAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		363461C9204B20E4005CE4F9 /* ForeverShoppingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 363461F4204B20E4005CE4F9 /* Build configuration list for PBXNativeTarget "ForeverShoppingApp" */;
+			buildPhases = (
+				363461C6204B20E4005CE4F9 /* Sources */,
+				363461C7204B20E4005CE4F9 /* Frameworks */,
+				363461C8204B20E4005CE4F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ForeverShoppingApp;
+			productName = ForeverShoppingApp;
+			productReference = 363461CA204B20E4005CE4F9 /* ForeverShoppingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		363461DF204B20E4005CE4F9 /* ForeverShoppingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 363461F7204B20E4005CE4F9 /* Build configuration list for PBXNativeTarget "ForeverShoppingAppTests" */;
+			buildPhases = (
+				363461DC204B20E4005CE4F9 /* Sources */,
+				363461DD204B20E4005CE4F9 /* Frameworks */,
+				363461DE204B20E4005CE4F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				363461E2204B20E4005CE4F9 /* PBXTargetDependency */,
+			);
+			name = ForeverShoppingAppTests;
+			productName = ForeverShoppingAppTests;
+			productReference = 363461E0204B20E4005CE4F9 /* ForeverShoppingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		363461EA204B20E4005CE4F9 /* ForeverShoppingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 363461FA204B20E4005CE4F9 /* Build configuration list for PBXNativeTarget "ForeverShoppingAppUITests" */;
+			buildPhases = (
+				363461E7204B20E4005CE4F9 /* Sources */,
+				363461E8204B20E4005CE4F9 /* Frameworks */,
+				363461E9204B20E4005CE4F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				363461ED204B20E4005CE4F9 /* PBXTargetDependency */,
+			);
+			name = ForeverShoppingAppUITests;
+			productName = ForeverShoppingAppUITests;
+			productReference = 363461EB204B20E4005CE4F9 /* ForeverShoppingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		363461C2204B20E3005CE4F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Zhang, Kuangyi";
+				TargetAttributes = {
+					363461C9204B20E4005CE4F9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					363461DF204B20E4005CE4F9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 363461C9204B20E4005CE4F9;
+					};
+					363461EA204B20E4005CE4F9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 363461C9204B20E4005CE4F9;
+					};
+				};
+			};
+			buildConfigurationList = 363461C5204B20E3005CE4F9 /* Build configuration list for PBXProject "ForeverShoppingApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 363461C1204B20E3005CE4F9;
+			productRefGroup = 363461CB204B20E4005CE4F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				363461C9204B20E4005CE4F9 /* ForeverShoppingApp */,
+				363461DF204B20E4005CE4F9 /* ForeverShoppingAppTests */,
+				363461EA204B20E4005CE4F9 /* ForeverShoppingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		363461C8204B20E4005CE4F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363461DA204B20E4005CE4F9 /* LaunchScreen.storyboard in Resources */,
+				363461D7204B20E4005CE4F9 /* Assets.xcassets in Resources */,
+				363461D5204B20E4005CE4F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363461DE204B20E4005CE4F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363461E9204B20E4005CE4F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		363461C6204B20E4005CE4F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363461CE204B20E4005CE4F9 /* AppDelegate.swift in Sources */,
+				36346210204B4067005CE4F9 /* ItemDetailPgController.swift in Sources */,
+				36346214204B5CAD005CE4F9 /* SignUpPgController.swift in Sources */,
+				36346206204B2DC0005CE4F9 /* AccountPgController.swift in Sources */,
+				3634620C204B3FEE005CE4F9 /* ItemTablePgController.swift in Sources */,
+				363B77D820531F26007D6717 /* WelcomView.swift in Sources */,
+				363461D0204B20E4005CE4F9 /* HomePgController.swift in Sources */,
+				369520A8205089A600DDA98B /* Items.swift in Sources */,
+				36346204204B2D5F005CE4F9 /* CartPgController.swift in Sources */,
+				369520AA2050952200DDA98B /* SignatureView.swift in Sources */,
+				36346212204B4688005CE4F9 /* CheckOutPgController.swift in Sources */,
+				363461FE204B217B005CE4F9 /* WelcomePgController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363461DC204B20E4005CE4F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363461E5204B20E4005CE4F9 /* ForeverShoppingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363461E7204B20E4005CE4F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363461F0204B20E4005CE4F9 /* ForeverShoppingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		363461E2204B20E4005CE4F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 363461C9204B20E4005CE4F9 /* ForeverShoppingApp */;
+			targetProxy = 363461E1204B20E4005CE4F9 /* PBXContainerItemProxy */;
+		};
+		363461ED204B20E4005CE4F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 363461C9204B20E4005CE4F9 /* ForeverShoppingApp */;
+			targetProxy = 363461EC204B20E4005CE4F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		363461D3204B20E4005CE4F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				363461D4204B20E4005CE4F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		363461D8204B20E4005CE4F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				363461D9204B20E4005CE4F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		363461F2204B20E4005CE4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		363461F3204B20E4005CE4F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		363461F5204B20E4005CE4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				INFOPLIST_FILE = ForeverShoppingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.ralph.rzhang.ForeverShoppingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		363461F6204B20E4005CE4F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				INFOPLIST_FILE = ForeverShoppingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.ralph.rzhang.ForeverShoppingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		363461F8204B20E4005CE4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForeverShoppingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.ralph.rzhang.ForeverShoppingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForeverShoppingApp.app/ForeverShoppingApp";
+			};
+			name = Debug;
+		};
+		363461F9204B20E4005CE4F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForeverShoppingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.ralph.rzhang.ForeverShoppingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForeverShoppingApp.app/ForeverShoppingApp";
+			};
+			name = Release;
+		};
+		363461FB204B20E4005CE4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForeverShoppingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.ralph.rzhang.ForeverShoppingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ForeverShoppingApp;
+			};
+			name = Debug;
+		};
+		363461FC204B20E4005CE4F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForeverShoppingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.ralph.rzhang.ForeverShoppingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ForeverShoppingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		363461C5204B20E3005CE4F9 /* Build configuration list for PBXProject "ForeverShoppingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363461F2204B20E4005CE4F9 /* Debug */,
+				363461F3204B20E4005CE4F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		363461F4204B20E4005CE4F9 /* Build configuration list for PBXNativeTarget "ForeverShoppingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363461F5204B20E4005CE4F9 /* Debug */,
+				363461F6204B20E4005CE4F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		363461F7204B20E4005CE4F9 /* Build configuration list for PBXNativeTarget "ForeverShoppingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363461F8204B20E4005CE4F9 /* Debug */,
+				363461F9204B20E4005CE4F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		363461FA204B20E4005CE4F9 /* Build configuration list for PBXNativeTarget "ForeverShoppingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363461FB204B20E4005CE4F9 /* Debug */,
+				363461FC204B20E4005CE4F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 363461C2204B20E3005CE4F9 /* Project object */;
+}
