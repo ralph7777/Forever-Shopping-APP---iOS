@@ -2,8 +2,8 @@
 //  WelcomePgController.swift
 //  ForeverShoppingApp
 //
-//  Created by Zhang, Kuangyi on 3/3/18.
-//  Copyright © 2018 Zhang, Kuangyi. All rights reserved.
+//  Created by Ralph on 3/3/18.
+//  Copyright © 2018 Ralph. All rights reserved.
 //
 
 import UIKit

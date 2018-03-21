@@ -1,4 +1,4 @@
 # ForeverShopping APP
-iOS Online Shopping Application
+iOS Online Shopping Moblie Application
 
-See 'ForeverShoppingAPPDocumentation' for more details.
+Please see 'ForeverShoppingAPPDocumentation.pdf' for all details.

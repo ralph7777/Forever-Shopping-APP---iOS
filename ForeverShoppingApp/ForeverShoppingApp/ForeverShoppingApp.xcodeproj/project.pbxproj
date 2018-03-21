@@ -60,7 +60,7 @@
 		363461FD204B217B005CE4F9 /* WelcomePgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePgController.swift; sourceTree = "<group>"; };
 		36346203204B2D5F005CE4F9 /* CartPgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPgController.swift; sourceTree = "<group>"; };
 		36346205204B2DC0005CE4F9 /* AccountPgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPgController.swift; sourceTree = "<group>"; };
-		3634620B204B3FEE005CE4F9 /* ItemTablePgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemTablePgController.swift; path = ../ItemTablePgController.swift; sourceTree = "<group>"; };
+		3634620B204B3FEE005CE4F9 /* ItemTablePgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTablePgController.swift; sourceTree = "<group>"; };
 		3634620F204B4067005CE4F9 /* ItemDetailPgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailPgController.swift; sourceTree = "<group>"; };
 		36346211204B4688005CE4F9 /* CheckOutPgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutPgController.swift; sourceTree = "<group>"; };
 		36346213204B5CAD005CE4F9 /* SignUpPgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPgController.swift; sourceTree = "<group>"; };
